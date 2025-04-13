@@ -217,8 +217,6 @@ namespace ServiceAccountFinder
         {
             try
             {
-                funcProgramRegistryTag("ServiceAccountFinder");
-
                 funcLogToEventLog("ServiceAccountFinder", "ServiceAccountFinder started successfully.", 1301);
 
                 string strQueryFilter = "(&(&(&(sAMAccountType=805306369)(objectCategory=computer)(|(operatingSystem=Windows Server 2008*)(operatingSystem=Windows Server 2003*)(operatingSystem=Windows 2000 Server*)(operatingSystem=Windows NT*)(operatingSystem=*2008*)))))";
